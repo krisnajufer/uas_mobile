@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crud.CrudFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edNBarang"
+            android:layout_width="345dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="33dp"
+            android:ems="10"
+            android:hint="Nama Barang"
+            android:inputType="text"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edHbarang"
+            android:layout_width="345dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="33dp"
+            android:ems="10"
+            android:hint="Harga Barang"
+            android:inputType="text"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edNBarang" />
+
+        <EditText
+            android:id="@+id/edJbarang"
+            android:layout_width="345dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="33dp"
+            android:ems="10"
+            android:hint="Jumlah Barang"
+            android:inputType="text"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edHbarang" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="338dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="300dp"
+            android:text="Kembali"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="110dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="36dp"
+            android:text="Delete"
+            app:layout_constraintBottom_toTopOf="@+id/btnBack"
+            app:layout_constraintEnd_toStartOf="@+id/btnUpdate"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edJbarang"
+            app:layout_constraintVertical_bias="0.958" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="110dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="36dp"
+            android:text="Update"
+            app:layout_constraintBottom_toTopOf="@+id/btnBack"
+            app:layout_constraintEnd_toStartOf="@+id/btnSave"
+            app:layout_constraintTop_toBottomOf="@+id/edJbarang"
+            app:layout_constraintVertical_bias="0.958" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="110dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="36dp"
+            android:text="Simpan"
+            app:layout_constraintBottom_toTopOf="@+id/btnBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edJbarang"
+            app:layout_constraintVertical_bias="0.958"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
